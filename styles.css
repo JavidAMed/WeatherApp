@@ -1,0 +1,140 @@
+*{
+    font-family: "Cabin", sans-serif;
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1A1A40;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 0.5fr auto 1fr;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-auto-rows: minmax(500px,auto);
+    max-width: 90%;
+    margin:0 auto;
+    
+}
+
+.container .header{
+    min-height: 100px;
+}
+
+.container .main{
+    text-align:center;
+    grid-column-start:2;
+    grid-row-start: 2;
+    padding:20px;
+    border-radius:30px;
+    background-image: linear-gradient(135deg, #270082,#7A0BC0);
+}
+
+.container .main .search-box{
+    display: flex;
+    justify-content: center;
+}
+
+.container .main .search-box input{
+    flex:1;
+    border-radius: 30px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.container .main .search-box button{
+    border:0;
+    outline:0;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.container .main .search-box button img{
+    width: 50%;
+    height: 50%;
+}
+
+.container .main .weather img{
+    margin-top: 10px;
+    padding:0;
+    width:150px;
+    height:150px;
+}
+
+.container .main .weather{
+    margin:0;
+    padding:0;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.container .main .details{
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+
+.container .main .details .humidity {
+    display:flex;
+    text-align:left;
+    gap:10px;
+    align-items:center;
+
+}
+
+.container .main .details .humidity {
+    display:flex;
+    text-align:left;
+    gap:10px;
+    align-items:center;
+
+}
+
+.container .main .details .windspeed {
+    display:flex;
+    text-align:left;
+    gap:10px;
+
+}
+
+.container .main .details .humidity .humidity-icon {
+    height:30px;
+
+}
+
+.container .main .details .humidity .detail-title {
+    font-size:0.2 rem;
+
+}
+
+.container .main .details .windspeed .detail-title {
+    font-size:0.2 rem;
+
+}
+
+.container .main .details .windspeed .wind-icon {
+    height:35px;
+
+}
+.content{
+    display:none;
+}
+
+.error{
+    text-align: left;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    color: red;
+    display: none;
+}
+
+
